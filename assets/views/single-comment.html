@@ -1,13 +1,11 @@
-<li class="comment-block" >
-  <div class="comment-avatar">
-    <img ng-src="{{ getAvatar(comment.author) }}" alt="{{ comment.author | lowercase}}" >
+<div class="comment-avatar">
+  <img ng-src="{{ getAvatar(comment.author) }}" alt="{{ comment.author | lowercase}}" >
+</div>
+<div class="comment">
+  <div class="author">
+    {{ comment.author | lowercase}}
   </div>
-  <div class="comment">
-    <div class="author">
-      {{ comment.author | lowercase}}
-    </div>
-    <p class="content">
-      {{ comment.content }}
-    </p>
-  </div>
-</li>
+  <p class="content">
+    {{ comment.content }}
+  </p>
+</div>
