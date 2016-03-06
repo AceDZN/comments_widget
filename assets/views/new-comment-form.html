@@ -1,0 +1,6 @@
+<form class="add-comment" name="commentForm" novalidate="novalidate" ng-submit="commentForm.$valid && addNewComment()" >
+  <input type="email" placeholder="Email" ng-model="newComment.author" required="required"/>
+  <textarea placeholder="Message" ng-model="newComment.content" required="required"></textarea>
+  <button type="submit" ng-disabled="!commentForm.$valid">Submit</button>
+  <div class="clear"></div>
+</form>

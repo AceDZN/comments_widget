@@ -1,0 +1,9 @@
+{
+  "name": "comments-widget",
+  "version": "1.0.0",
+  "author": "Alex Sindalovsky",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
+}

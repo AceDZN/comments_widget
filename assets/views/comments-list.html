@@ -1,0 +1,7 @@
+<div class="comments_wrap" ng-if="comments.length">
+  <filter-comments></filter-comments>
+  <ul class="comment-list" ng-class="{no_list : comments.length <= 1}">
+    <filter-no-comments></filter-no-comments>
+    <single-comment ng-repeat="comment in comments | filter:filterText"></single-comment>
+  </ul>
+</div>
