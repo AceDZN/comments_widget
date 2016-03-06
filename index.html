@@ -17,8 +17,12 @@
         <div class="clear"></div>
       </form>
       <div class="comments_wrap" ng-if="comments.length">
+        <div class="filter_wrap">
+          <span class="fa fa-search"></span>
+          <input class="filter" ng-model="filterText" placeholder="Filter"></label>
+        </div>
         <ul class="comment-list">
-          <li class="comment-block" ng-repeat="comment in comments">
+          <li class="comment-block" ng-repeat="comment in comments | filter:filterText">
             <div class="comment-avatar">
               <img ng-src="{{ getAvatar(comment.author) }}" alt="{{ comment.author | lowercase}}" >
             </div>

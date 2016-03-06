@@ -1,4 +1,4 @@
-
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 ::-webkit-input-placeholder {
   color: #c6c6c6;
   font-weight: 100;
@@ -106,6 +106,17 @@ button[type="submit"]:disabled{
   color: #BBB;
 }
 
+.filter_wrap span{
+  position:absolute;
+  top: 10px;
+  left: 10px;
+  color:#afafaf;
+  z-index: +1;
+}
+.filter_wrap input{
+  border-color:#cacaca;
+  text-indent: 22px;
+}
 
 .comments_wrap{
   padding:20px;
