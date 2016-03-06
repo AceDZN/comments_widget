@@ -1,2 +1,2 @@
 # comments_widget
-Comments widget app
+Standalone Comments Widget :)
