@@ -60,7 +60,7 @@ body {
   cursor: default;
 }
 
-.main_wrap{
+.widget_wrap{
   margin:auto;
   max-width: 350px;
   border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;
@@ -76,6 +76,7 @@ form.add-comment{
   box-shadow:inset 0 0 3px red;
 }
 input,textarea{
+  cursor:text;
   width:100%;
   border:1px solid #c6c6c6;
   font-size:12px;
@@ -173,4 +174,12 @@ form.add-comment button[type="submit"]:hover{
 }
 .comment > p.content{
   line-height: normal;
+}
+.ace-logo{
+  text-align:center;
+  margin-top:20px;
+}
+.ace-logo a{
+  display:inline-block;
+  cursor:pointer;
 }
