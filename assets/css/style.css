@@ -1,0 +1,135 @@
+
+::-webkit-input-placeholder {
+  color: #c6c6c6;
+  font-weight: 100;
+}
+::-moz-placeholder {
+  color: #c6c6c6;
+}
+:-ms-input-placeholder {
+  color: #c6c6c6;
+}
+:-moz-placeholder {
+  color: #c6c6c6;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  background: scroll transparent none 0 0 repeat;
+  border: 0 none #000;
+  outline: 0 none #000;
+  border-radius: 0;
+  box-shadow: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-variant: inherit;
+  font-weight: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  text-transform: inherit;
+  line-height: inherit;
+  vertical-align: top;
+  cursor: inherit;
+  -webkit-tap-highlight-color: transparent;
+  position:relative;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.clear{
+  clear: both;
+  float:none;
+}
+
+body {
+  padding:40px;
+  background-color: #f9f9f9;
+  color: #000;
+  font-size: 16px;
+  font-family: Arial,sans-serif;
+  text-align: left;
+  line-height: 1.4;
+  z-index: 0;
+  cursor: default;
+}
+
+.main_wrap{
+  margin:auto;
+  max-width: 350px;
+  border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;
+  border:1px solid #efefef;
+}
+
+form.add-comment{
+  background: #efefef;
+  padding:20px;
+}
+
+input,textarea{
+  width:100%;
+  border:1px solid #c6c6c6;
+  font-size:12px;
+  line-height: 32px;
+  font-weight:100;
+  padding: 0 10px;
+  background:#fff;
+  margin-bottom:10px;
+}
+
+form.add-comment > textarea{
+  height:65px;
+  resize: none;
+}
+button[type="submit"]{
+  font-size: 12px;
+  background:#43a6e1;
+  border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;
+  padding:0 20px;
+  line-height: 32px;
+  color:#fff;
+  float:right;
+  text-transform: uppercase;
+  cursor:pointer;
+}
+
+
+button[type="submit"]:disabled{
+  background:#E2E2E2;
+  color: #BBB;
+}
+
+
+.comments_wrap{
+  padding:20px;
+}
+
+.comment-block {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  color: #797979;
+  padding:10px 0;
+}
+
+.comment-block > .comment-avatar {
+  flex-shrink: 0;
+}
+
+.comment-block > .comment {
+  padding-left: 10px;
+  line-height: 20px;
+
+}
+
+.comment > .author{
+  color:#505050;
+  font-weight:600;
+}
