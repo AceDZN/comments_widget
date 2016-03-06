@@ -20,7 +20,7 @@
         <ul class="comment-list">
           <li class="comment-block" ng-repeat="comment in comments">
             <div class="comment-avatar">
-              <img src="http://gravatar.com/avatar/default?s=50" alt="{{ comment.author | lowercase}}" >
+              <img ng-src="{{ getAvatar(comment.author) }}" alt="{{ comment.author | lowercase}}" >
             </div>
             <div class="comment">
               <div class="author">
@@ -38,5 +38,6 @@
     </div>
 
     <script type="text/javascript" src="./assets/js/app.js"></script>
+    <script type="text/javascript" src="./assets/js/services/gravatar.js"></script>
   </body>
 </html>
