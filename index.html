@@ -21,8 +21,20 @@
           <span class="fa fa-search"></span>
           <input class="filter" ng-model="filterText" placeholder="Filter"></label>
         </div>
-        <ul class="comment-list">
-
+        <ul class="comment-list" ng-class="{no_list : comments.length <= 1}">
+          <li class="comment-block no_comments" ng-if="(comments | filter:filterText).length == 0">
+            <div class="comment-avatar">
+              <img src="./assets/img/sad-emoticon.png" alt="No Comments" width="50">
+            </div>
+            <div class="comment">
+              <div class="author">
+                Sorry,
+              </div>
+              <p class="content">
+                we didn't found any comment that match '{{ filterText }}'
+              </p>
+            </div>
+          </li>
           <li class="comment-block" ng-repeat="comment in comments | filter:filterText">
             <div class="comment-avatar">
               <img ng-src="{{ getAvatar(comment.author) }}" alt="{{ comment.author | lowercase}}" >
@@ -31,11 +43,9 @@
               <div class="author">
                 {{ comment.author | lowercase}}
               </div>
-              <div class="content">
-                <p>
-                  {{ comment.content }}
-                </p>
-              </div>
+              <p class="content">
+                {{ comment.content }}
+              </p>
             </div>
           </li>
         </ul>

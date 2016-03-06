@@ -122,7 +122,7 @@ form.add-comment button[type="submit"]:hover{
 }
 .filter_wrap input{
   border-color:#cacaca;
-  text-indent: 22px;
+      padding-left: 32px;
 }
 
 .comments_wrap{
@@ -159,13 +159,18 @@ form.add-comment button[type="submit"]:hover{
   background:#fff url('../img/loader.gif') center center no-repeat;
   border-radius:5px;
 }
+.no_comments .comment-avatar > img{
+  background: transparent;
+}
 .comment-block > .comment {
   padding-left: 10px;
   line-height: 20px;
-
 }
 
 .comment > .author{
   color:#505050;
   font-weight:600;
+}
+.comment > p.content{
+  line-height: normal;
 }
