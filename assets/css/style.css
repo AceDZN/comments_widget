@@ -122,7 +122,7 @@ form.add-comment button[type="submit"]:hover{
 }
 .filter_wrap input{
   border-color:#cacaca;
-      padding-left: 32px;
+  padding-left: 32px;
 }
 
 .comments_wrap{
