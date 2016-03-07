@@ -1,8 +1,8 @@
-# comments_widget
-Standalone Comments Widget :)
+# Comments Widget - AngularJS Version
+Standalone angular Comments Widget :)
 
 ####Familiar with Git?#####
-Checkout this repo, install depdencies, then start the http-server process with the following:
+Checkout this repo, install dependencies, then start the http-server process with the following:
 
 ```
 	> git clone git@github.com:AceDZN/comments_widget.git
