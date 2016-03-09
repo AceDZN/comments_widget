@@ -1,4 +1,4 @@
 "use strict";
 (function(){
-  angular.module('comments', []);
+  angular.module('comments', ['ngAnimate']);
 }());
