@@ -2,7 +2,7 @@
 
   <filter-comments></filter-comments>
   <div class="comment-list" ng-class="{no_list : results.length <= 1 }">
-<filter-no-comments class="comment-block no_comments" ng-if="results.length == 0"></filter-no-comments>
+<filter-no-comments class="comment-block no_comments" ng-show="results.length == 0"></filter-no-comments>
     <single-comment class="comment-block" ng-repeat="comment in comments| filter:filterText as results" ></single-comment>
 
   </div>
