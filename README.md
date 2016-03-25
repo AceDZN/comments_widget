@@ -20,3 +20,6 @@ Click [here](https://github.com/AceDZN/comments_widget/releases) then download t
 	> http-server
   > navigate to http://127.0.0.1:8080/ or http://192.168.1.105:8080 in your browser
 ```
+
+
+<img src="http://www.acedzn.com/assets/img/icons/android-icon-57x57.png">
